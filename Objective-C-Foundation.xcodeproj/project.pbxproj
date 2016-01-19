@@ -12,6 +12,7 @@
 		04456BF61C4E08930077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456BF51C4E08930077EEA3 /* main.m */; };
 		04456C011C4E0B480077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C001C4E0B480077EEA3 /* main.m */; };
 		04456C0C1C4E10CF0077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C0B1C4E10CF0077EEA3 /* main.m */; };
+		04456C171C4E18BF0077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C161C4E18BF0077EEA3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04456C121C4E18BF0077EEA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +83,8 @@
 		04456C001C4E0B480077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04456C091C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSDateFormtter日期格式化器"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04456C0B1C4E10CF0077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04456C141C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSCalendar日历和NSDateComponent日期组件"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04456C161C4E18BF0077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04456C111C4E18BF0077EEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,6 +141,7 @@
 				04456BF41C4E08930077EEA3 /* 可变字符串 */,
 				04456BFF1C4E0B480077EEA3 /* 日期与时间 */,
 				04456C0A1C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */,
+				04456C151C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +154,7 @@
 				04456BF31C4E08930077EEA3 /* 可变字符串 */,
 				04456BFE1C4E0B480077EEA3 /* 日期与时间 */,
 				04456C091C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */,
+				04456C141C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +197,14 @@
 				04456C0B1C4E10CF0077EEA3 /* main.m */,
 			);
 			path = "NSDateFormtter日期格式化器";
+			sourceTree = "<group>";
+		};
+		04456C151C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */ = {
+			isa = PBXGroup;
+			children = (
+				04456C161C4E18BF0077EEA3 /* main.m */,
+			);
+			path = "NSCalendar日历和NSDateComponent日期组件";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +295,23 @@
 			productReference = 04456C091C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04456C131C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04456C181C4E18BF0077EEA3 /* Build configuration list for PBXNativeTarget "NSCalendar日历和NSDateComponent日期组件" */;
+			buildPhases = (
+				04456C101C4E18BF0077EEA3 /* Sources */,
+				04456C111C4E18BF0077EEA3 /* Frameworks */,
+				04456C121C4E18BF0077EEA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSCalendar日历和NSDateComponent日期组件";
+			productName = "NSCalendar日历和NSDateComponent日期组件";
+			productReference = 04456C141C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -290,6 +336,9 @@
 					04456C081C4E10CF0077EEA3 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04456C131C4E18BF0077EEA3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 042611391C4DD2CE00986399 /* Build configuration list for PBXProject "Objective-C-Foundation" */;
@@ -309,6 +358,7 @@
 				04456BF21C4E08930077EEA3 /* 可变字符串 */,
 				04456BFD1C4E0B480077EEA3 /* 日期与时间 */,
 				04456C081C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */,
+				04456C131C4E18BF0077EEA3 /* NSCalendar日历和NSDateComponent日期组件 */,
 			);
 		};
 /* End PBXProject section */
@@ -351,6 +401,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04456C0C1C4E10CF0077EEA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04456C101C4E18BF0077EEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04456C171C4E18BF0077EEA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +564,20 @@
 			};
 			name = Release;
 		};
+		04456C191C4E18BF0077EEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04456C1A1C4E18BF0077EEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -556,6 +628,14 @@
 			buildConfigurations = (
 				04456C0E1C4E10CF0077EEA3 /* Debug */,
 				04456C0F1C4E10CF0077EEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04456C181C4E18BF0077EEA3 /* Build configuration list for PBXNativeTarget "NSCalendar日历和NSDateComponent日期组件" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04456C191C4E18BF0077EEA3 /* Debug */,
+				04456C1A1C4E18BF0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
