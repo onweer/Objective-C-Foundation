@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		042611421C4DD2CE00986399 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042611411C4DD2CE00986399 /* main.m */; };
+		04456BEB1C4DE5C90077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456BEA1C4DE5C90077EEA3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0426113C1C4DD2CE00986399 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		04456BE61C4DE5C90077EEA3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		0426113E1C4DD2CE00986399 /* Objective-C-Foundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C-Foundation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		042611411C4DD2CE00986399 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04456BE81C4DE5C90077EEA3 /* NSStringTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSStringTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04456BEA1C4DE5C90077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0426113B1C4DD2CE00986399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04456BE51C4DE5C90077EEA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				042611401C4DD2CE00986399 /* Objective-C-Foundation */,
+				04456BE91C4DE5C90077EEA3 /* NSStringTest */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				0426113E1C4DD2CE00986399 /* Objective-C-Foundation */,
+				04456BE81C4DE5C90077EEA3 /* NSStringTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				042611411C4DD2CE00986399 /* main.m */,
 			);
 			path = "Objective-C-Foundation";
+			sourceTree = "<group>";
+		};
+		04456BE91C4DE5C90077EEA3 /* NSStringTest */ = {
+			isa = PBXGroup;
+			children = (
+				04456BEA1C4DE5C90077EEA3 /* main.m */,
+			);
+			path = NSStringTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 0426113E1C4DD2CE00986399 /* Objective-C-Foundation */;
 			productType = "com.apple.product-type.tool";
 		};
+		04456BE71C4DE5C90077EEA3 /* NSStringTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04456BEE1C4DE5C90077EEA3 /* Build configuration list for PBXNativeTarget "NSStringTest" */;
+			buildPhases = (
+				04456BE41C4DE5C90077EEA3 /* Sources */,
+				04456BE51C4DE5C90077EEA3 /* Frameworks */,
+				04456BE61C4DE5C90077EEA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSStringTest;
+			productName = NSStringTest;
+			productReference = 04456BE81C4DE5C90077EEA3 /* NSStringTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = SpiColorPendra;
 				TargetAttributes = {
 					0426113D1C4DD2CE00986399 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					04456BE71C4DE5C90077EEA3 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -109,6 +158,7 @@
 			projectRoot = "";
 			targets = (
 				0426113D1C4DD2CE00986399 /* Objective-C-Foundation */,
+				04456BE71C4DE5C90077EEA3 /* NSStringTest */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				042611421C4DD2CE00986399 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04456BE41C4DE5C90077EEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04456BEB1C4DE5C90077EEA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +276,20 @@
 			};
 			name = Release;
 		};
+		04456BEC1C4DE5C90077EEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04456BED1C4DE5C90077EEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -235,6 +307,15 @@
 			buildConfigurations = (
 				042611461C4DD2CE00986399 /* Debug */,
 				042611471C4DD2CE00986399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04456BEE1C4DE5C90077EEA3 /* Build configuration list for PBXNativeTarget "NSStringTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04456BEC1C4DE5C90077EEA3 /* Debug */,
+				04456BED1C4DE5C90077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
