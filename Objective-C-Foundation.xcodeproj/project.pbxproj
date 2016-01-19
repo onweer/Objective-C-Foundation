@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		042611421C4DD2CE00986399 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042611411C4DD2CE00986399 /* main.m */; };
 		04456BEB1C4DE5C90077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456BEA1C4DE5C90077EEA3 /* main.m */; };
+		04456BF61C4E08930077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456BF51C4E08930077EEA3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04456BF11C4E08930077EEA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,8 @@
 		042611411C4DD2CE00986399 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04456BE81C4DE5C90077EEA3 /* NSStringTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSStringTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04456BEA1C4DE5C90077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04456BF31C4E08930077EEA3 /* 可变字符串 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "可变字符串"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04456BF51C4E08930077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04456BF01C4E08930077EEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +81,7 @@
 			children = (
 				042611401C4DD2CE00986399 /* Objective-C-Foundation */,
 				04456BE91C4DE5C90077EEA3 /* NSStringTest */,
+				04456BF41C4E08930077EEA3 /* 可变字符串 */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				0426113E1C4DD2CE00986399 /* Objective-C-Foundation */,
 				04456BE81C4DE5C90077EEA3 /* NSStringTest */,
+				04456BF31C4E08930077EEA3 /* 可变字符串 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +110,14 @@
 				04456BEA1C4DE5C90077EEA3 /* main.m */,
 			);
 			path = NSStringTest;
+			sourceTree = "<group>";
+		};
+		04456BF41C4E08930077EEA3 /* 可变字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				04456BF51C4E08930077EEA3 /* main.m */,
+			);
+			path = "可变字符串";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +157,23 @@
 			productReference = 04456BE81C4DE5C90077EEA3 /* NSStringTest */;
 			productType = "com.apple.product-type.tool";
 		};
+		04456BF21C4E08930077EEA3 /* 可变字符串 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04456BF71C4E08930077EEA3 /* Build configuration list for PBXNativeTarget "可变字符串" */;
+			buildPhases = (
+				04456BEF1C4E08930077EEA3 /* Sources */,
+				04456BF01C4E08930077EEA3 /* Frameworks */,
+				04456BF11C4E08930077EEA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "可变字符串";
+			productName = "可变字符串";
+			productReference = 04456BF31C4E08930077EEA3 /* 可变字符串 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +187,9 @@
 						CreatedOnToolsVersion = 7.2;
 					};
 					04456BE71C4DE5C90077EEA3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					04456BF21C4E08930077EEA3 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -159,6 +208,7 @@
 			targets = (
 				0426113D1C4DD2CE00986399 /* Objective-C-Foundation */,
 				04456BE71C4DE5C90077EEA3 /* NSStringTest */,
+				04456BF21C4E08930077EEA3 /* 可变字符串 */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +227,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04456BEB1C4DE5C90077EEA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04456BEF1C4E08930077EEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04456BF61C4E08930077EEA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +348,20 @@
 			};
 			name = Release;
 		};
+		04456BF81C4E08930077EEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04456BF91C4E08930077EEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -316,6 +388,14 @@
 			buildConfigurations = (
 				04456BEC1C4DE5C90077EEA3 /* Debug */,
 				04456BED1C4DE5C90077EEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04456BF71C4E08930077EEA3 /* Build configuration list for PBXNativeTarget "可变字符串" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04456BF81C4E08930077EEA3 /* Debug */,
+				04456BF91C4E08930077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
