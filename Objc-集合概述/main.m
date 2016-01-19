@@ -19,6 +19,9 @@ int main(int argc, const char * argv[]) {
         // 初始化数组的时候  数学:80  语文:79 这种虽然看上去是两个数组，但是两个数组之间有一定的关联关系。
         // 为了保存数量不确定的数据，以及保存具有映射关系的数据，OC提供了集合类
         // 集合类也被称为容器类
+        // NSArray NSSet NSDictionary 类簇为代表
+        // NSArray子类NSMutableArray  NSSet子类MSMutableSet  NSDictionary子类NSMutableDictionary
+        
     }
     return 0;
 }
