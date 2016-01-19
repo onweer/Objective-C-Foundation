@@ -11,6 +11,7 @@
 		04456BEB1C4DE5C90077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456BEA1C4DE5C90077EEA3 /* main.m */; };
 		04456BF61C4E08930077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456BF51C4E08930077EEA3 /* main.m */; };
 		04456C011C4E0B480077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C001C4E0B480077EEA3 /* main.m */; };
+		04456C0C1C4E10CF0077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C0B1C4E10CF0077EEA3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04456C071C4E10CF0077EEA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +71,8 @@
 		04456BF51C4E08930077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04456BFE1C4E0B480077EEA3 /* 日期与时间 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "日期与时间"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04456C001C4E0B480077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04456C091C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSDateFormtter日期格式化器"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04456C0B1C4E10CF0077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04456C061C4E10CF0077EEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +121,7 @@
 				04456BE91C4DE5C90077EEA3 /* NSStringTest */,
 				04456BF41C4E08930077EEA3 /* 可变字符串 */,
 				04456BFF1C4E0B480077EEA3 /* 日期与时间 */,
+				04456C0A1C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +133,7 @@
 				04456BE81C4DE5C90077EEA3 /* NSStringTest */,
 				04456BF31C4E08930077EEA3 /* 可变字符串 */,
 				04456BFE1C4E0B480077EEA3 /* 日期与时间 */,
+				04456C091C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +168,14 @@
 				04456C001C4E0B480077EEA3 /* main.m */,
 			);
 			path = "日期与时间";
+			sourceTree = "<group>";
+		};
+		04456C0A1C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */ = {
+			isa = PBXGroup;
+			children = (
+				04456C0B1C4E10CF0077EEA3 /* main.m */,
+			);
+			path = "NSDateFormtter日期格式化器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +249,23 @@
 			productReference = 04456BFE1C4E0B480077EEA3 /* 日期与时间 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04456C081C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04456C0D1C4E10CF0077EEA3 /* Build configuration list for PBXNativeTarget "NSDateFormtter日期格式化器" */;
+			buildPhases = (
+				04456C051C4E10CF0077EEA3 /* Sources */,
+				04456C061C4E10CF0077EEA3 /* Frameworks */,
+				04456C071C4E10CF0077EEA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSDateFormtter日期格式化器";
+			productName = "NSDateFormtter日期格式化器";
+			productReference = 04456C091C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,6 +287,9 @@
 					04456BFD1C4E0B480077EEA3 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04456C081C4E10CF0077EEA3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 042611391C4DD2CE00986399 /* Build configuration list for PBXProject "Objective-C-Foundation" */;
@@ -259,6 +308,7 @@
 				04456BE71C4DE5C90077EEA3 /* NSStringTest */,
 				04456BF21C4E08930077EEA3 /* 可变字符串 */,
 				04456BFD1C4E0B480077EEA3 /* 日期与时间 */,
+				04456C081C4E10CF0077EEA3 /* NSDateFormtter日期格式化器 */,
 			);
 		};
 /* End PBXProject section */
@@ -293,6 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04456C011C4E0B480077EEA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04456C051C4E10CF0077EEA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04456C0C1C4E10CF0077EEA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +492,20 @@
 			};
 			name = Release;
 		};
+		04456C0E1C4E10CF0077EEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04456C0F1C4E10CF0077EEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -476,6 +548,14 @@
 			buildConfigurations = (
 				04456C031C4E0B480077EEA3 /* Debug */,
 				04456C041C4E0B480077EEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04456C0D1C4E10CF0077EEA3 /* Build configuration list for PBXNativeTarget "NSDateFormtter日期格式化器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04456C0E1C4E10CF0077EEA3 /* Debug */,
+				04456C0F1C4E10CF0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
