@@ -35,6 +35,8 @@
 		0463A6A41C4F6BC1001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6A31C4F6BC1001AF6A9 /* main.m */; };
 		0463A6AF1C4F703D001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6AE1C4F703D001AF6A9 /* main.m */; };
 		0463A6BA1C4F74D0001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6B91C4F74D0001AF6A9 /* main.m */; };
+		0463A6C01C4F7663001AF6A9 /* NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6BF1C4F7663001AF6A9 /* NSDictionary.m */; };
+		0463A6C31C4F79AF001AF6A9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6C21C4F79AF001AF6A9 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -304,6 +306,10 @@
 		0463A6AE1C4F703D001AF6A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0463A6B71C4F74D0001AF6A9 /* NSDictionary字典NSMutableDictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSDictionary字典NSMutableDictionary"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463A6B91C4F74D0001AF6A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0463A6BE1C4F7663001AF6A9 /* NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary.h; sourceTree = "<group>"; };
+		0463A6BF1C4F7663001AF6A9 /* NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary.m; sourceTree = "<group>"; };
+		0463A6C11C4F79AF001AF6A9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0463A6C21C4F79AF001AF6A9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -720,6 +726,10 @@
 		0463A6B81C4F74D0001AF6A9 /* NSDictionary字典NSMutableDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				0463A6C11C4F79AF001AF6A9 /* User.h */,
+				0463A6C21C4F79AF001AF6A9 /* User.m */,
+				0463A6BE1C4F7663001AF6A9 /* NSDictionary.h */,
+				0463A6BF1C4F7663001AF6A9 /* NSDictionary.m */,
 				0463A6B91C4F74D0001AF6A9 /* main.m */,
 			);
 			path = "NSDictionary字典NSMutableDictionary";
@@ -1424,7 +1434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463A6C01C4F7663001AF6A9 /* NSDictionary.m in Sources */,
 				0463A6BA1C4F74D0001AF6A9 /* main.m in Sources */,
+				0463A6C31C4F79AF001AF6A9 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
