@@ -41,4 +41,10 @@
     NSUInteger passHash = pass == nil ? 0 : [pass hash];
     return nameHash * 31 + passHash;
 }
+- (BOOL)isEqual:(id)other
+{
+    NSLog(@"isEqual Method");
+    return name == [other name] && pass == [other pass];
+}
+
 @end
