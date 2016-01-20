@@ -27,6 +27,8 @@
 		04456C831C4E65E60077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C821C4E65E60077EEA3 /* main.m */; };
 		04456C8E1C4E68100077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C8D1C4E68100077EEA3 /* main.m */; };
 		04456C991C4E69520077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C981C4E69520077EEA3 /* main.m */; };
+		0463A67D1C4F3AE0001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A67C1C4F3AE0001AF6A9 /* main.m */; };
+		0463A6831C4F3B1B001AF6A9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6821C4F3B1B001AF6A9 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -183,6 +185,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0463A6781C4F3AE0001AF6A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +237,10 @@
 		04456C8D1C4E68100077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04456C961C4E69520077EEA3 /* 可变数组NSMutableArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "可变数组NSMutableArray"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04456C981C4E69520077EEA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0463A67A1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSArray的KVC和KVO"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0463A67C1C4F3AE0001AF6A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0463A6811C4F3B1B001AF6A9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0463A6821C4F3B1B001AF6A9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +363,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0463A6771C4F3AE0001AF6A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -371,6 +393,7 @@
 				04456C811C4E65E60077EEA3 /* 使用枚举遍历NSArray集合元素 */,
 				04456C8C1C4E68100077EEA3 /* 快速枚举(for...in) */,
 				04456C971C4E69520077EEA3 /* 可变数组NSMutableArray */,
+				0463A67B1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -395,6 +418,7 @@
 				04456C801C4E65E60077EEA3 /* 使用枚举遍历NSArray集合元素 */,
 				04456C8B1C4E68100077EEA3 /* 快速枚举(for...in) */,
 				04456C961C4E69520077EEA3 /* 可变数组NSMutableArray */,
+				0463A67A1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -539,6 +563,16 @@
 				04456C981C4E69520077EEA3 /* main.m */,
 			);
 			path = "可变数组NSMutableArray";
+			sourceTree = "<group>";
+		};
+		0463A67B1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */ = {
+			isa = PBXGroup;
+			children = (
+				0463A6811C4F3B1B001AF6A9 /* User.h */,
+				0463A6821C4F3B1B001AF6A9 /* User.m */,
+				0463A67C1C4F3AE0001AF6A9 /* main.m */,
+			);
+			path = "NSArray的KVC和KVO";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -833,6 +867,23 @@
 			productReference = 04456C961C4E69520077EEA3 /* 可变数组NSMutableArray */;
 			productType = "com.apple.product-type.tool";
 		};
+		0463A6791C4F3AE0001AF6A9 /* NSArray的KVC和KVO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0463A6801C4F3AE0001AF6A9 /* Build configuration list for PBXNativeTarget "NSArray的KVC和KVO" */;
+			buildPhases = (
+				0463A6761C4F3AE0001AF6A9 /* Sources */,
+				0463A6771C4F3AE0001AF6A9 /* Frameworks */,
+				0463A6781C4F3AE0001AF6A9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSArray的KVC和KVO";
+			productName = "NSArray的KVC和KVO";
+			productReference = 0463A67A1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -893,6 +944,9 @@
 					04456C951C4E69520077EEA3 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					0463A6791C4F3AE0001AF6A9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 042611391C4DD2CE00986399 /* Build configuration list for PBXProject "Objective-C-Foundation" */;
@@ -924,6 +978,7 @@
 				04456C7F1C4E65E60077EEA3 /* 使用枚举遍历NSArray集合元素 */,
 				04456C8A1C4E68100077EEA3 /* 快速枚举(for...in) */,
 				04456C951C4E69520077EEA3 /* 可变数组NSMutableArray */,
+				0463A6791C4F3AE0001AF6A9 /* NSArray的KVC和KVO */,
 			);
 		};
 /* End PBXProject section */
@@ -1065,6 +1120,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				04456C991C4E69520077EEA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0463A6761C4F3AE0001AF6A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0463A6831C4F3B1B001AF6A9 /* User.m in Sources */,
+				0463A67D1C4F3AE0001AF6A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1388,6 +1452,20 @@
 			};
 			name = Release;
 		};
+		0463A67E1C4F3AE0001AF6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0463A67F1C4F3AE0001AF6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1416,6 +1494,7 @@
 				04456BED1C4DE5C90077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456BF71C4E08930077EEA3 /* Build configuration list for PBXNativeTarget "可变字符串" */ = {
 			isa = XCConfigurationList;
@@ -1424,6 +1503,7 @@
 				04456BF91C4E08930077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C021C4E0B480077EEA3 /* Build configuration list for PBXNativeTarget "日期与时间" */ = {
 			isa = XCConfigurationList;
@@ -1432,6 +1512,7 @@
 				04456C041C4E0B480077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C0D1C4E10CF0077EEA3 /* Build configuration list for PBXNativeTarget "NSDateFormtter日期格式化器" */ = {
 			isa = XCConfigurationList;
@@ -1440,6 +1521,7 @@
 				04456C0F1C4E10CF0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C181C4E18BF0077EEA3 /* Build configuration list for PBXNativeTarget "NSCalendar日历和NSDateComponent日期组件" */ = {
 			isa = XCConfigurationList;
@@ -1448,6 +1530,7 @@
 				04456C1A1C4E18BF0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C231C4E2A7E0077EEA3 /* Build configuration list for PBXNativeTarget "NSTimer定时器" */ = {
 			isa = XCConfigurationList;
@@ -1456,6 +1539,7 @@
 				04456C251C4E2A7E0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C311C4E31700077EEA3 /* Build configuration list for PBXNativeTarget "copy和mutableCopy方法" */ = {
 			isa = XCConfigurationList;
@@ -1464,6 +1548,7 @@
 				04456C331C4E31700077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C3C1C4E33FC0077EEA3 /* Build configuration list for PBXNativeTarget "NSCopying与NSMutableCopy协议" */ = {
 			isa = XCConfigurationList;
@@ -1472,6 +1557,7 @@
 				04456C3E1C4E33FC0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C4A1C4E36E70077EEA3 /* Build configuration list for PBXNativeTarget "浅复制与深复制" */ = {
 			isa = XCConfigurationList;
@@ -1480,6 +1566,7 @@
 				04456C4C1C4E36E70077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C551C4E3BF00077EEA3 /* Build configuration list for PBXNativeTarget "Objc-集合概述" */ = {
 			isa = XCConfigurationList;
@@ -1488,6 +1575,7 @@
 				04456C571C4E3BF00077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C601C4E419D0077EEA3 /* Build configuration list for PBXNativeTarget "NSArray" */ = {
 			isa = XCConfigurationList;
@@ -1496,6 +1584,7 @@
 				04456C621C4E419D0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C6B1C4E55A70077EEA3 /* Build configuration list for PBXNativeTarget "对元素整体调用方法" */ = {
 			isa = XCConfigurationList;
@@ -1504,6 +1593,7 @@
 				04456C6D1C4E55A70077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C791C4E5BCB0077EEA3 /* Build configuration list for PBXNativeTarget "NSArray排序" */ = {
 			isa = XCConfigurationList;
@@ -1512,6 +1602,7 @@
 				04456C7B1C4E5BCB0077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C841C4E65E60077EEA3 /* Build configuration list for PBXNativeTarget "使用枚举遍历NSArray集合元素" */ = {
 			isa = XCConfigurationList;
@@ -1520,6 +1611,7 @@
 				04456C861C4E65E60077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C8F1C4E68100077EEA3 /* Build configuration list for PBXNativeTarget "快速枚举(for...in)" */ = {
 			isa = XCConfigurationList;
@@ -1528,12 +1620,22 @@
 				04456C911C4E68100077EEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04456C9A1C4E69520077EEA3 /* Build configuration list for PBXNativeTarget "可变数组NSMutableArray" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04456C9B1C4E69520077EEA3 /* Debug */,
 				04456C9C1C4E69520077EEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0463A6801C4F3AE0001AF6A9 /* Build configuration list for PBXNativeTarget "NSArray的KVC和KVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0463A67E1C4F3AE0001AF6A9 /* Debug */,
+				0463A67F1C4F3AE0001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
