@@ -44,7 +44,7 @@
 - (BOOL)isEqual:(id)other
 {
     NSLog(@"isEqual Method");
-    return name == [other name] && pass == [other pass];
+    return [name isEqualToString:[other name]] && [pass isEqualToString:[other pass]];
 }
 
 @end
