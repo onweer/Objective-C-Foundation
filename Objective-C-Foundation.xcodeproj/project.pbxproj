@@ -29,6 +29,8 @@
 		04456C991C4E69520077EEA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04456C981C4E69520077EEA3 /* main.m */; };
 		0463A67D1C4F3AE0001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A67C1C4F3AE0001AF6A9 /* main.m */; };
 		0463A6831C4F3B1B001AF6A9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6821C4F3B1B001AF6A9 /* User.m */; };
+		0463A68B1C4F4B27001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A68A1C4F4B27001AF6A9 /* main.m */; };
+		0463A6911C4F559F001AF6A9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6901C4F559F001AF6A9 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -194,6 +196,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0463A6861C4F4B27001AF6A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -241,6 +252,10 @@
 		0463A67C1C4F3AE0001AF6A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0463A6811C4F3B1B001AF6A9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0463A6821C4F3B1B001AF6A9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0463A6881C4F4B27001AF6A9 /* NSSet和NSMutableSet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSSet和NSMutableSet"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0463A68A1C4F4B27001AF6A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0463A68F1C4F559F001AF6A9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0463A6901C4F559F001AF6A9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +385,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0463A6851C4F4B27001AF6A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -394,6 +416,7 @@
 				04456C8C1C4E68100077EEA3 /* 快速枚举(for...in) */,
 				04456C971C4E69520077EEA3 /* 可变数组NSMutableArray */,
 				0463A67B1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */,
+				0463A6891C4F4B27001AF6A9 /* NSSet和NSMutableSet */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -419,6 +442,7 @@
 				04456C8B1C4E68100077EEA3 /* 快速枚举(for...in) */,
 				04456C961C4E69520077EEA3 /* 可变数组NSMutableArray */,
 				0463A67A1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */,
+				0463A6881C4F4B27001AF6A9 /* NSSet和NSMutableSet */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -573,6 +597,16 @@
 				0463A67C1C4F3AE0001AF6A9 /* main.m */,
 			);
 			path = "NSArray的KVC和KVO";
+			sourceTree = "<group>";
+		};
+		0463A6891C4F4B27001AF6A9 /* NSSet和NSMutableSet */ = {
+			isa = PBXGroup;
+			children = (
+				0463A68F1C4F559F001AF6A9 /* Person.h */,
+				0463A6901C4F559F001AF6A9 /* Person.m */,
+				0463A68A1C4F4B27001AF6A9 /* main.m */,
+			);
+			path = "NSSet和NSMutableSet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -884,6 +918,23 @@
 			productReference = 0463A67A1C4F3AE0001AF6A9 /* NSArray的KVC和KVO */;
 			productType = "com.apple.product-type.tool";
 		};
+		0463A6871C4F4B27001AF6A9 /* NSSet和NSMutableSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0463A68C1C4F4B27001AF6A9 /* Build configuration list for PBXNativeTarget "NSSet和NSMutableSet" */;
+			buildPhases = (
+				0463A6841C4F4B27001AF6A9 /* Sources */,
+				0463A6851C4F4B27001AF6A9 /* Frameworks */,
+				0463A6861C4F4B27001AF6A9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSSet和NSMutableSet";
+			productName = "NSSet和NSMutableSet";
+			productReference = 0463A6881C4F4B27001AF6A9 /* NSSet和NSMutableSet */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -947,6 +998,9 @@
 					0463A6791C4F3AE0001AF6A9 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					0463A6871C4F4B27001AF6A9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 042611391C4DD2CE00986399 /* Build configuration list for PBXProject "Objective-C-Foundation" */;
@@ -979,6 +1033,7 @@
 				04456C8A1C4E68100077EEA3 /* 快速枚举(for...in) */,
 				04456C951C4E69520077EEA3 /* 可变数组NSMutableArray */,
 				0463A6791C4F3AE0001AF6A9 /* NSArray的KVC和KVO */,
+				0463A6871C4F4B27001AF6A9 /* NSSet和NSMutableSet */,
 			);
 		};
 /* End PBXProject section */
@@ -1129,6 +1184,15 @@
 			files = (
 				0463A6831C4F3B1B001AF6A9 /* User.m in Sources */,
 				0463A67D1C4F3AE0001AF6A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0463A6841C4F4B27001AF6A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0463A6911C4F559F001AF6A9 /* Person.m in Sources */,
+				0463A68B1C4F4B27001AF6A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1466,6 +1530,20 @@
 			};
 			name = Release;
 		};
+		0463A68D1C4F4B27001AF6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0463A68E1C4F4B27001AF6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1636,6 +1714,14 @@
 			buildConfigurations = (
 				0463A67E1C4F3AE0001AF6A9 /* Debug */,
 				0463A67F1C4F3AE0001AF6A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0463A68C1C4F4B27001AF6A9 /* Build configuration list for PBXNativeTarget "NSSet和NSMutableSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0463A68D1C4F4B27001AF6A9 /* Debug */,
+				0463A68E1C4F4B27001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
