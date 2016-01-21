@@ -39,6 +39,8 @@
 		0463A6C31C4F79AF001AF6A9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6C21C4F79AF001AF6A9 /* User.m */; };
 		0463A6CB1C4F9E61001AF6A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6CA1C4F9E61001AF6A9 /* main.m */; };
 		0463A6D11C4F9F9D001AF6A9 /* NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463A6D01C4F9F9D001AF6A9 /* NSDictionary.m */; };
+		04E2FF6D1C509F580089E4D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FF6C1C509F580089E4D0 /* main.m */; };
+		04E2FF731C50A0610089E4D0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2FF721C50A0610089E4D0 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -258,6 +260,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04E2FF681C509F580089E4D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -325,6 +336,10 @@
 		0463A6CA1C4F9E61001AF6A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0463A6CF1C4F9F9D001AF6A9 /* NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary.h; sourceTree = "<group>"; };
 		0463A6D01C4F9F9D001AF6A9 /* NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary.m; sourceTree = "<group>"; };
+		04E2FF6A1C509F580089E4D0 /* 谓词 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "谓词"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2FF6C1C509F580089E4D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04E2FF711C50A0610089E4D0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		04E2FF721C50A0610089E4D0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +511,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04E2FF671C509F580089E4D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -526,6 +548,7 @@
 				0463A6AD1C4F703D001AF6A9 /* 有序集合NSOrderedSet NSMutableOrderedSet */,
 				0463A6B81C4F74D0001AF6A9 /* NSDictionary字典NSMutableDictionary */,
 				0463A6C91C4F9E61001AF6A9 /* 对NSDictionary排序 */,
+				04E2FF6B1C509F580089E4D0 /* 谓词 */,
 				0426113F1C4DD2CE00986399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -557,6 +580,7 @@
 				0463A6AC1C4F703D001AF6A9 /* 有序集合NSOrderedSet NSMutableOrderedSet */,
 				0463A6B71C4F74D0001AF6A9 /* NSDictionary字典NSMutableDictionary */,
 				0463A6C81C4F9E61001AF6A9 /* 对NSDictionary排序 */,
+				04E2FF6A1C509F580089E4D0 /* 谓词 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -767,6 +791,16 @@
 				0463A6CA1C4F9E61001AF6A9 /* main.m */,
 			);
 			path = "对NSDictionary排序";
+			sourceTree = "<group>";
+		};
+		04E2FF6B1C509F580089E4D0 /* 谓词 */ = {
+			isa = PBXGroup;
+			children = (
+				04E2FF711C50A0610089E4D0 /* User.h */,
+				04E2FF721C50A0610089E4D0 /* User.m */,
+				04E2FF6C1C509F580089E4D0 /* main.m */,
+			);
+			path = "谓词";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1180,6 +1214,23 @@
 			productReference = 0463A6C81C4F9E61001AF6A9 /* 对NSDictionary排序 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04E2FF691C509F580089E4D0 /* 谓词 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E2FF701C509F580089E4D0 /* Build configuration list for PBXNativeTarget "谓词" */;
+			buildPhases = (
+				04E2FF661C509F580089E4D0 /* Sources */,
+				04E2FF671C509F580089E4D0 /* Frameworks */,
+				04E2FF681C509F580089E4D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "谓词";
+			productName = "谓词";
+			productReference = 04E2FF6A1C509F580089E4D0 /* 谓词 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1261,6 +1312,9 @@
 					0463A6C71C4F9E61001AF6A9 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04E2FF691C509F580089E4D0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 042611391C4DD2CE00986399 /* Build configuration list for PBXProject "Objective-C-Foundation" */;
@@ -1299,6 +1353,7 @@
 				0463A6AB1C4F703D001AF6A9 /* 有序集合NSOrderedSet NSMutableOrderedSet */,
 				0463A6B61C4F74D0001AF6A9 /* NSDictionary字典NSMutableDictionary */,
 				0463A6C71C4F9E61001AF6A9 /* 对NSDictionary排序 */,
+				04E2FF691C509F580089E4D0 /* 谓词 */,
 			);
 		};
 /* End PBXProject section */
@@ -1501,6 +1556,15 @@
 			files = (
 				0463A6D11C4F9F9D001AF6A9 /* NSDictionary.m in Sources */,
 				0463A6CB1C4F9E61001AF6A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2FF661C509F580089E4D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2FF731C50A0610089E4D0 /* User.m in Sources */,
+				04E2FF6D1C509F580089E4D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1922,6 +1986,20 @@
 			};
 			name = Release;
 		};
+		04E2FF6E1C509F580089E4D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04E2FF6F1C509F580089E4D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2094,6 +2172,7 @@
 				0463A67F1C4F3AE0001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0463A68C1C4F4B27001AF6A9 /* Build configuration list for PBXNativeTarget "NSSet和NSMutableSet" */ = {
 			isa = XCConfigurationList;
@@ -2102,6 +2181,7 @@
 				0463A68E1C4F4B27001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0463A69A1C4F6ABB001AF6A9 /* Build configuration list for PBXNativeTarget "NSMutableSet" */ = {
 			isa = XCConfigurationList;
@@ -2110,6 +2190,7 @@
 				0463A69C1C4F6ABB001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0463A6A51C4F6BC1001AF6A9 /* Build configuration list for PBXNativeTarget "NSCountedSet" */ = {
 			isa = XCConfigurationList;
@@ -2118,6 +2199,7 @@
 				0463A6A71C4F6BC1001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0463A6B01C4F703D001AF6A9 /* Build configuration list for PBXNativeTarget "有序集合NSOrderedSet NSMutableOrderedSet" */ = {
 			isa = XCConfigurationList;
@@ -2126,6 +2208,7 @@
 				0463A6B21C4F703D001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0463A6BB1C4F74D0001AF6A9 /* Build configuration list for PBXNativeTarget "NSDictionary字典NSMutableDictionary" */ = {
 			isa = XCConfigurationList;
@@ -2134,12 +2217,22 @@
 				0463A6BD1C4F74D0001AF6A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0463A6CC1C4F9E61001AF6A9 /* Build configuration list for PBXNativeTarget "对NSDictionary排序" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0463A6CD1C4F9E61001AF6A9 /* Debug */,
 				0463A6CE1C4F9E61001AF6A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E2FF701C509F580089E4D0 /* Build configuration list for PBXNativeTarget "谓词" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2FF6E1C509F580089E4D0 /* Debug */,
+				04E2FF6F1C509F580089E4D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
