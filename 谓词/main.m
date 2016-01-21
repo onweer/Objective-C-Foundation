@@ -54,6 +54,34 @@ int main(int argc, const char * argv[]) {
         NSLog(@"name包含金的 : %@",newSet);
         
         //在谓词中使用占位符
+        
+        //  %K 该占位符用于动态传入属性名    %@  该占位符用于动态设置属性值
+        
+        NSString* propPath = @"name";
+        NSString* value = @"金";
+        NSPredicate* pred3 = [NSPredicate predicateWithFormat:
+                              @"%K CONTAINS %@",propPath,value];
+        //执行过滤
+        NSSet* newSet2 = [set filteredSetUsingPredicate:pred3];
+        NSLog(@"%@",newSet2);
+        
+        //创建谓词 该谓词表达式中使用%K占位符 该占位符使用pass代替
+        //要求被比较的对象的pass包含$SUBSTR字符
+        NSPredicate* predTemplate = [NSPredicate predicateWithFormat:
+                                     @"%K CONTAINS $SUBSTR",@"pass"];
+        //使用NSDictionary指定SUBSTR的值为 '43'
+        NSPredicate *pred4 = [predTemplate predicateWithSubstitutionVariables:
+                              [NSDictionary dictionaryWithObjectsAndKeys:
+                               @"42",@"SUBSTR", nil]];
+        //执行过滤
+        NSSet* newSet3 = [set filteredSetUsingPredicate:pred4];
+        NSLog(@"%@",newSet3);
+        //再次使用NSDictionary指定SUBSTR的值为5
+        NSPredicate* pred5 = [predTemplate predicateWithSubstitutionVariables:
+                              [NSDictionary dictionaryWithObjectsAndKeys:
+                               @"5",@"SUBSTR", nil]];
+        NSSet* newSet4 = [set filteredSetUsingPredicate:pred5];
+        NSLog(@"%@",newSet4);
     }
     return 0;
 }
