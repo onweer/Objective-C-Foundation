@@ -57,6 +57,21 @@ int main(int argc, const char * argv[]) {
 
          */
         
+        // 对NSDictionary的key进行过滤
+        NSDictionary* dict2 = [NSDictionary dictionaryWithObjectsAndKeys:
+                               [NSNumber numberWithInt:89],@"Objective-C",
+                               [NSNumber numberWithInt:69],@"Ruby",
+                               [NSNumber numberWithInt:75],@"Python",
+                               [NSNumber numberWithInt:109],@"Perl",
+                               nil];
+        [dict2 print];
+        //对NSDictionary的所有key进行过滤
+        NSSet* keyset = [dict2 keysOfEntriesPassingTest:
+                         ^(id key , id value , BOOL *stop){
+                         //当value的值大于80的时候，才返回YES
+                             return (BOOL)([value intValue] > 80);
+                         }];
+        NSLog(@"%@",keyset);
         
     }
     return 0;
